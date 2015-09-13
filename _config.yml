@@ -10,6 +10,8 @@ description: >
 baseurl: ""
 url: "http://lyosha.me"
 
+google_analytics: UA-10323085-1
+
 social:
   facebook: https://www.facebook.com/aleksey.gladysh
   linkedin: https://www.linkedin.com/in/alekseyg
