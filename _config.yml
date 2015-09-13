@@ -1,5 +1,8 @@
 # Site settings
 title: Aleksey Gladysh
+html_title: >
+  A<span class="hidden-xs">leksey
+  </span>G<span class="hidden-xs">ladysh</span>
 email: aleksey.gladysh@gmail.com
 description: >
   Web designer and developer from California. Artist, musician,
