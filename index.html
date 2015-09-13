@@ -3,21 +3,18 @@ layout: default
 ---
 
 <div class="home">
+  {% include header.html %}
 
-  <h1 class="page-heading">Posts</h1>
+  <div class="home-header text-center">
+    <h1>{{ site.title | replace: ' ','<br> ' }}</h1>
+    <hr>
+    <ul class="list-unstyled">
+      <li>Web Developer</li>
+      <li>Software Engineer</li>
+      <li>Habitual Hiker</li>
+      <li>Amateur Chef</li>
+    </ul>
+  </div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+  {% include footer.html %}
 </div>
