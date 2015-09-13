@@ -28,7 +28,7 @@ nav:
 
 # Build settings
 markdown: kramdown
-permalink: pretty
+permalink: /blog/:year/:month/:day/:title/
 exclude: [Gemfile, Gemfile.lock]
 
 gems:

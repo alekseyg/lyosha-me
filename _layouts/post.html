@@ -1,8 +1,22 @@
 ---
 layout: page
 ---
-<div class="post">
 
+<div class="row">
+  <div class="col-md-8">
     {{ content }}
+    <hr>
+    <small>
+      <ul class="list-inline">
+        <li class="text-muted">Posted in:</li>
+      {% for category in page.categories %}
+        {% include category.html category=category %}
+      {% endfor %}
+      </ul>
+    </small>
 
+  </div>
+  <div class="col-md-4">
+    {% include sidebar.html %}
+  </div>
 </div>

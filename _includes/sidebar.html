@@ -1,0 +1,10 @@
+<aside>
+  <h3>Categories</h3>
+  <ul class="list-unstyled">
+  {% for cat in site.categories %}
+    {% if category[0] == 'blog' %}{% continue %}{% endif %}
+    {% assign category = cat | first %}
+    {% include category.html category=category %}
+  {% endfor %}
+  </ul>
+</aside>

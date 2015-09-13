@@ -1,0 +1,6 @@
+<li><a href="{{ site.baseurl }}/blog/#{{ include.category }}">
+  {% assign words = include.category | split: '-' %}
+  {% for word in words %}
+    {{ word | capitalize }}
+  {% endfor %}
+</a></li>

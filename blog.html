@@ -1,0 +1,30 @@
+---
+layout: page
+title: Blog
+permalink: /blog/
+---
+
+<div class="row">
+  <div class="col-md-8">
+    {% for post in site.posts %}
+      <article class="post" data-categories="{{ post.categories | join: ' ' }}">
+        <header>
+          <h2>
+            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h2>
+          <p class="text-muted"><small>{{ post.date | date_to_string }}</small></p>
+        </header>
+        {{ post.excerpt }}
+        <a href="{{ post.url | prepend: site.baseurl }}">Read more.</a>
+        <hr>
+      </article>
+    {% endfor %}
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  </div>
+  <div class="col-md-4">
+    {% include sidebar.html %}
+  </div>
+</div>
+
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="{{ '/js/blog.js' | prepend: site.baseurl }}"></script>
