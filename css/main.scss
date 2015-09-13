@@ -3,6 +3,7 @@
 @charset "utf-8";
 
 // Variables
+@import "variables";
 @import "bootstrap/variables";
 
 // Reset/normalize
@@ -20,4 +21,5 @@
 
 // Modules
 @import "modules/sticky-footer";
+@import "modules/misc";
 @import "syntax-highlighting";

@@ -1,0 +1,27 @@
+.site-nav,
+.container-fluid {
+  margin: 0 auto;
+  max-width: (1140px + $grid-gutter-width);
+}
+
+.site-title {
+  font-family: 'Cinzel Decorative', $font-family-serif;
+  color: $gray-dark;
+}
+
+article {
+  font-family: $font-family-serif;
+  font-size: 16px;
+}
+
+h1 {
+  font-weight: 100;
+}
+
+.site-header {
+  border-bottom: 1px solid $hr-border;
+}
+
+.site-footer {
+  border-top: 1px solid $hr-border;
+}

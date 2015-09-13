@@ -1,0 +1,15 @@
+$gray-base:              #000 !default;
+$gray-darker:            lighten($gray-base, 13.5%) !default; // #222
+$font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+
+
+$brand-primary:           darken(#42ca8b, 6.5%);
+$text-color:              $gray-darker;
+
+$headings-font-family:    $font-family-sans-serif;
+$headings-font-weight:    200;
+
+$border-radius-base:      0;
+$border-radius-large:     0;
+
+$thumbnail-border-radius:   0;
