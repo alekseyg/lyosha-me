@@ -1,0 +1,29 @@
+$footer-height: 45px;
+$footer-height-sm: $footer-height;
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: $footer-height;
+
+  @media (min-width: $screen-sm) {
+    margin-bottom: $footer-height-sm;
+  }
+}
+
+.sticky-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-top: 15px;
+  /* Set the fixed height of the footer here */
+  height: $footer-height;
+
+  @media (min-width: $screen-sm) {
+    height: $footer-height-sm;
+  }
+}
