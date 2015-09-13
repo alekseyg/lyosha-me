@@ -18,5 +18,5 @@ Active websites
 Archived websites
 -----------------
 
-- [1000 Linens](http://1000f.lyosha.me) - A website for a wedding decorator.
+- [1000 Linens](http://1000linens.lyosha.me) - A website for a wedding decorator.
 - [K ź D Scooters](http://kndscooters.kndjumparound.com/) - This is wehere it all began, with my first client.
