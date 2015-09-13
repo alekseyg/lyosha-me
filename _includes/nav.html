@@ -1,0 +1,6 @@
+{% assign page_url = page.url | replace: 'index.html','' %}
+{% for link in site.nav %}
+  <li{% if link.url == page_url or link.url contains '/blog/' and page.categories %} class="active"{% endif %}><a
+    href="{{ link.url | prepend: site.baseurl }}">{{ link.title }}</a>
+  </li>
+{% endfor %}

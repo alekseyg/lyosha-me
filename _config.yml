@@ -6,8 +6,22 @@ description: > # this means to ignore newlines until "baseurl:"
   and chef in a past life.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://lyosha.me" # the base hostname & protocol for your site
-twitter_username: lyosha_g
-github_username:  alekseyg
+
+social:
+  facebook: https://www.facebook.com/aleksey.gladysh
+  linkedin: https://www.linkedin.com/in/alekseyg
+  instagram: https://instagram.com/aleksey_g/
+  github: https://github.com/alekseyg
+  twitter: https://twitter.com/lyosha_g
+
+nav:
+# - title: Portfolio
+#   url: /portfolio/
+# - title: Resume
+#   url: /resume/
+- title: Blog
+  url: /blog/
+
 
 # Build settings
 markdown: kramdown
