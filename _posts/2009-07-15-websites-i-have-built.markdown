@@ -6,7 +6,7 @@ categories: web-development
 redirect_from: /posts/2-websites-i-have-built/
 ---
 
-A larger portfolio of my work can be found at [Hypernova Design Studio](http://hypernovastudio.com). This is an archive/portfolio of the work I have done outside of Hypernova.
+A larger portfolio of my work can be found at [Hypernova Design Studio](https://www.hypernovastudio.com). This is an archive/portfolio of the work I have done outside of Hypernova.
 
 Active websites
 ---------------
