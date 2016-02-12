@@ -1,0 +1,49 @@
+---
+layout: page
+title: Virtual Keyboard Detection Demo
+permalink: /virtual-keyboards-demo/
+---
+
+<style>
+  body {
+    margin-bottom: 120px;
+  }
+
+  #message-form {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-top: 1px solid #ccc;
+    padding: 15px;
+  }
+
+  .message {
+    margin-bottom: 10px;
+    padding: 5px;
+    background: #eee;
+  }
+
+  .site-footer {
+    display: none;
+  }
+
+  textarea, button {
+    width: 100%;
+  }
+</style>
+
+<div class="messages"></div>
+
+<form id="message-form" method="post" action="/messages">
+  <div>
+    <textarea id="message_body" name="message[body]"></textarea>
+  </div>
+  <div>
+    <button type="submit">Send</button>
+  </div>
+</form>
+
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="{{ '/js/virtual-keyboards.js' | prepend: site.baseurl }}"></script>
