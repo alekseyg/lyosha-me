@@ -36,3 +36,4 @@ exclude: [Gemfile, Gemfile.lock]
 gems:
   - jekyll-sitemap
   - jekyll-redirect-from
+  - jekyll-coffeescript
