@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Detecting virtual keyboards (when typing in an input field)
+date: 2016-02-12 19:14
 categories: web-development
 ---
 
@@ -8,7 +9,7 @@ Sometimes, it is useful to differentiate between physical and virtual keyboards 
 
 ## Screen width media queries won't cut it
 
-On first thought, one may be tempted to use a media query in Javascript to change the behavior for mobile vs desktop. However, let's not forget that the screen size isn't what changes the behavior here. A mobile phone or tablet can be hooked up to a physical keyboard and a desktop computer can also have a touch screen. Also, in landscape mode, a tablet resolution is esentially that of a small desktop in most responsive designs.
+On first thought, one may be tempted to use a media query in Javascript to change the behavior for mobile vs desktop. However, let's not forget that the screen size isn't what changes the behavior here. A mobile phone or tablet can be hooked up to a physical keyboard and a desktop computer can also have a touch screen. Also, in landscape mode, a tablet resolution is essentially that of a small desktop in most responsive designs.
 
 We need to differentiate between a physical and a virtual keyboard rather than screen size, and browsers currently have no API to do so that I am aware of. Searching high and low, I've found [many](http://stackoverflow.com/questions/2593139/ipad-web-app-detect-virtual-keyboard-using-javascript-in-safari) [people](http://stackoverflow.com/questions/13270659/detect-virtual-keyboard-vs-hardware-keyboard) [asking](http://stackoverflow.com/questions/8556933/screen-styling-when-virtual-keyboard-is-active) [for](http://stackoverflow.com/questions/11600040/jquery-js-html5-change-page-content-when-keyboard-is-visible-on-mobile-devices) a way to change the layout in response to the presence of a virtual keyboard, or lack thereof, but [only one discussion](http://stackoverflow.com/questions/18880236/how-do-i-detect-hardware-keyboard-presence-with-javascript) on the actual behavior of the keyboard, which had no solution. Then I had a thought – does a virtual keyboard care about when you press and release keys the way a physical keyboard, or does it fire `keydown` and `keyup` events instantaneously?
 
