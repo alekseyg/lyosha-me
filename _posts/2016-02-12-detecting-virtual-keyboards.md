@@ -57,6 +57,10 @@ interceptEnterKey = ($message) ->
     start = new Date().getTime()      # set start to current time
 
     if e.keyCode == 13                # if return was pressed
+      if !keyTimes.length             # if it was the first key pressed
+        e.preventDefault()            # cancel newline insertion and
+        return                        # exit function immediately
+
       # Note: Array.reduce is an ES5 function.
       # Use a polyfill if you need IE8 support.
       sumKeyTime = keyTimes.reduce (x, y) -> x + y # sum up the times
@@ -105,6 +109,10 @@ interceptEnterKey = ($message) ->
     start = new Date().getTime()      # set start to current time
 
     if isKeyRawEnter(e)               # if return was pressed
+      if !keyTimes.length             # if it was the first key pressed
+        e.preventDefault()            # cancel newline insertion and
+        return                        # exit function immediately
+
       # Note: Array.reduce is an ES5 function.
       # Use a polyfill if you need IE8 support.
       sumKeyTime = keyTimes.reduce (x, y) -> x + y # sum up the times
