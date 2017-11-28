@@ -33,7 +33,7 @@ markdown: kramdown
 permalink: /blog/:year/:month/:day/:title/
 exclude: [Gemfile, Gemfile.lock]
 
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
   - jekyll-coffeescript
