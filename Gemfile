@@ -8,4 +8,4 @@ gem 'github-pages', versions['github-pages']
 
 gem 'jekyll', '~> 3.6.2'
 gem 'jekyll-sitemap'
-gem 'jekyll-redirect-from', '~> 0.12.1'
+gem 'jekyll-redirect-from', '~> 0.13.0'
