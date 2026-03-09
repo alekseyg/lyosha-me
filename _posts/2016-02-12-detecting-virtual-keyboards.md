@@ -3,6 +3,7 @@ layout: post
 title: Detecting virtual keyboards (when typing in an input field)
 date: 2016-02-12 19:14
 categories: web-development
+redirect_to: https://bjornen.me/blog/detecting-virtual-keyboards/
 ---
 
 Sometimes, it is useful to differentiate between physical and virtual keyboards in a web application. In my case, I had built a new messaging system for [Yanteres](https://yanteres.com) with a responsive design which could be used on any device. While responsive design is a given on today's web, the behavior of certain actions – which can't be controlled via CSS – is different on mobile vs desktop. In the case of the aforementioned messaging system, hitting <kbd>Return</kbd> on physical keyboards is expected to send a message, while hitting <kbd>Return</kbd> on a phone's or tablet's virtual keyboard is expected to insert a newline.

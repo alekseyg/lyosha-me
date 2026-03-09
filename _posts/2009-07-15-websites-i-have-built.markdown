@@ -4,6 +4,7 @@ title: Websites I have built
 date: 2009-07-16 00:11
 categories: web-development
 redirect_from: /posts/2-websites-i-have-built/
+redirect_to: https://bjornen.me/blog/websites-i-have-built/
 ---
 
 A larger portfolio of my work can be found at [Hypernova Design Studio](https://www.hypernovastudio.com). This is an archive/portfolio of the work I have done outside of Hypernova.

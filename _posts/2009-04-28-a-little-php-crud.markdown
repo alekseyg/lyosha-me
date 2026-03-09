@@ -4,6 +4,7 @@ title: A little PHP CRUD
 date: 2009-04-28 15:09
 categories: web-development
 redirect_from: /posts/10-a-little-php-crud/
+redirect_to: https://bjornen.me/blog/a-little-php-crud/
 ---
 
 I had to return to PHP for a small application I had to write for which Rails would have been too big. Being used to Rails RESTful methods and MVC, I didn't want to make another messy 200 line PHP app that I would not be able to read later, so I coded a very small and simple CRUD "router" (as in Rails' routes) and I decided to share it with the world. So far it only works with a "controller" that manages plural resources. The CRUD pattern here is modeled after the way Rails controllers work. It's really simple, but it sure makes coding tiny apps a lot cleaner. (Helpers, clean URLs, MVC, etc. are up to the reader to implement)

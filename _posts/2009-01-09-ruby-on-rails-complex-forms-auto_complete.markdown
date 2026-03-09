@@ -4,6 +4,7 @@ title: "Ruby on Rails: Complex forms + auto_complete"
 date: 2009-01-09 18:59
 categories: web-development
 redirect_from: /posts/9-ruby-on-rails-complex-forms-auto_complete/
+redirect_to: https://bjornen.me/blog/ruby-on-rails-complex-forms-auto_complete/
 ---
 
 I haven't written here in a long time, so as many of you might not know yet, I've been learning Ruby on Rails the past 4 or 5 months. I'll have to say I've run into some pretty big challenges, but overall Ruby on Rails is one awesome framework. My latest challenge has been getting DHH's auto_complete plugin to work with Ryan Bates' complex forms. It might not be the best way to do it, but the solution was to monkey patch `ActionView::FormHelper` and `FormBuilder` which I put in a seperate file in the `/lib` folder of my project. So without further ado, here's the code:

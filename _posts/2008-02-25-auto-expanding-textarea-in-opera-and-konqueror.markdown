@@ -4,6 +4,7 @@ title: Auto expanding textarea in Opera and Konqueror
 date: 2008-02-25 16:24
 categories: web-development
 redirect_from: /posts/11-auto-expanding-textarea-in-opera-and-konqueror/
+redirect_to: https://bjornen.me/blog/auto-expanding-textarea-in-opera-and-konqueror/
 ---
 
 I recently had to make an auto expanding textarea for a web application and when it came to Opera, I couldn't find a working solution. The most common way of making the textarea to auto expand is to compare the `offsetHeight` or `clientHeight` of the textarea with the `scrollHeight`. This works fine in IE, Firefox, and Safari (and even allows auto shrinking in IE) but not in Opera or Konqueror. Some solutions I found divided the number of characters by the number of rows and and cols in the textarea. The problem with this is that many people don't type everything on one line, so it won't accurately measure how many lines there are.

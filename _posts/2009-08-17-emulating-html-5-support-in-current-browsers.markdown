@@ -4,6 +4,7 @@ title: Emulating HTML 5 support in current browsers
 date: 2009-08-18 01:13
 categories: web-development
 redirect_from: /posts/3-emulating-html-5-support-in-current-browsers/
+redirect_to: https://bjornen.me/blog/emulating-html-5-support-in-current-browsers/
 ---
 
 For about a year, I've slowly been migrating to <abbr title="Hypertext Markup Language">HTML</abbr> 5. First of course was the DOCTYPE. Next I started using new structure elements such as `<section>`, `<article>`, `<header>`, etc. and in some applications - Web Forms 2.0 input types.
